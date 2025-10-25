@@ -1,16 +1,70 @@
-# React + Vite
+🌐 React Frontend Project – Full Stack MERN (TuteDude Course)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my React.js frontend project created as part of the Full Stack MERN course from TuteDude.
+It includes multiple pages, routing, Tailwind CSS styling, a light/dark theme toggle, and reusable components like cards and headers.
 
-Currently, two official plugins are available:
+🚀 Deployment Link
+  🔗 Live Project:https://assigmint05.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📦 GitHub Repository
+  📂 GitHub Link:https://github.com/Sagnik1315/Assigmint_05.git
 
-## React Compiler
+🧩 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  This project demonstrates:
+  React component structure and routing
+  Tailwind CSS for styling and responsiveness
+  Theme toggle using React state and localStorage
+  Reusable UI components such as Header, Footer, and Card
 
-## Expanding the ESLint configuration
+  🗂️ Folder Structure
+      src/
+     ┣ components/
+     ┃ ┣ Header.jsx
+     ┃ ┣ Footer.jsx
+     ┃ ┣ ThemeButton.jsx
+     ┃ ┣ Card.jsx
+     ┣ pages/
+     ┃ ┣ Home.jsx
+     ┃ ┣ About.jsx
+     ┃ ┣ Contact.jsx
+     ┃ ┣ Services.jsx
+     ┃ ┣ User.jsx
+     ┣ App.jsx
+     ┣ index.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ Technologies Used
+ 
+    Technology	Purpose
+    React.js	Frontend framework
+    React Router DOM	Page routing
+    Tailwind CSS	Styling and responsiveness
+    Vite	Development environment
+    LocalStorage	Theme persistence
+    
+🖥️ Features
+
+  🌗 Light/Dark Mode toggle with smooth transitions
+  🧭 Routing between Home, About, Services, Contact, and User pages
+  🧱 Reusable Components (Header, Footer, Card)
+  💾 Persistent Theme Preference stored in localStorage
+  📱 Fully Responsive for all devices
+
+🧠 Learning Outcome
+
+  Gained hands-on experience with React Router and Tailwind CSS
+  Learned how to manage component-level state with useState and useEffect
+  Implemented reusable components and responsive design principles
+
+⚙️ How to Run Locally
+Clone the repository
+    git clone https://github.com/yourusername/your-repo-name.git
+Navigate to the project folder
+    cd your-repo-name
+Install dependencies
+    npm install
+Run the project
+    npm run dev
+Open in your browser
+    http://localhost:5173/
+
