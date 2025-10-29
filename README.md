@@ -4,7 +4,7 @@ This is my React.js frontend project created as part of the Full Stack MERN cour
 It includes multiple pages, routing, Tailwind CSS styling, a light/dark theme toggle, and reusable components like cards and headers.
 
 🚀 Deployment Link
-  🔗 Live Project:https://assigmint05.netlify.app/
+  🔗 Live Project:https:https://6901b6a9f52a1712becd5076--assigmint05.netlify.app/
 
 📦 GitHub Repository
   📂 GitHub Link:https://github.com/Sagnik1315/Assigmint_05.git
