@@ -1,33 +1,31 @@
-import { useState, useEffect, useCallback } from "react";
 
-const useFetch = (url) => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+import { useState, useEffect } from 'react';
 
-  const fetchData = useCallback(async () => {
-    try {
-      setLoading(true);
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`HTTP Error: ${response.status}`);
+function useFatch(url) {
+  const [data, setData] = useState([]);
+const [isLoading, setLoading] = useState(true);
+const [errMsg, setError] = useState("");
+useEffect(() => {
+
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`wrong: ${response.status}`);
+        }
+        const res = await response.json();
+        setData(res);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
       }
-      const result = await response.json();
-      setData(result);
-      setError(null);
-    } catch (err) {
-      setError(err.message);
-      setData(null);
-    } finally {
-      setLoading(false);
-    }
-  }, [url]);
+    };
 
-  useEffect(() => {
     fetchData();
-  }, [fetchData]);
+  }, [url]);
+  return { data, isLoading, errMsg };
 
-  return { data, loading, error };
-};
+}
 
-export default useFetch;
+export default useFatch
