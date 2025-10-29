@@ -2,9 +2,9 @@ import React from "react";
 import useFetch from "../hooks/useFatch";
 
 const ProductList = () => {
-  const { data, loading, error } = useFetch("https://api.escuelajs.co/api/v1/products");
+  const { data, isLoading, errMsg } = useFetch("https://api.escuelajs.co/api/v1/products");
 
-  if (loading)
+  if (isLoading)
     return (
       <div className="flex items-center justify-center h-screen">
         <div className="text-xl font-semibold text-gray-600 animate-pulse">
@@ -13,10 +13,10 @@ const ProductList = () => {
       </div>
     );
 
-  if (error)
+  if (errMsg)
     return (
       <div className="flex items-center justify-center h-screen text-red-500 font-medium">
-        Error: {error}
+        Error: {errMsg}
       </div>
     );
 
